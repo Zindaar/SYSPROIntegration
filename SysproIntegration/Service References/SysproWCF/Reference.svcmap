@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d1ed2fac-d4f3-4913-a31b-2bec2ff6c554" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:20091/SysproWCFService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SYSPROWCFService.wsdl" MetadataType="Wsdl" ID="186d67b3-3510-4dea-9958-e34b141b92c5" SourceId="1" SourceUrl="http://localhost:20091/SYSPROWCFService?wsdl=wsdl0" />
+    <MetadataFile FileName="SYSPROWCFService.xsd" MetadataType="Schema" ID="a97147db-fade-4398-88e7-ae81dc9599af" SourceId="1" SourceUrl="http://localhost:20091/SYSPROWCFService?xsd=xsd1" />
+    <MetadataFile FileName="SYSPROWCFService1.xsd" MetadataType="Schema" ID="9f74b4dc-682e-41ca-9a1c-e225fc1bd039" SourceId="1" SourceUrl="http://localhost:20091/SYSPROWCFService?xsd=xsd0" />
+    <MetadataFile FileName="SYSPROWCFService2.xsd" MetadataType="Schema" ID="47509f15-e52f-4069-899f-fd41148e08e2" SourceId="1" SourceUrl="http://localhost:20091/SYSPROWCFService?xsd=xsd2" />
+    <MetadataFile FileName="SYSPROWCFService.disco" MetadataType="Disco" ID="d394191c-6023-4506-8755-9f79f2e4f301" SourceId="1" SourceUrl="http://localhost:20091/SYSPROWCFService?disco" />
+    <MetadataFile FileName="SYSPROWCFService1.wsdl" MetadataType="Wsdl" ID="2aa15f46-e02e-479b-9a35-4fb270f05781" SourceId="1" SourceUrl="http://localhost:20091/SYSPROWCFService?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

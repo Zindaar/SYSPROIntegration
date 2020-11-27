@@ -1,0 +1,197 @@
+3.0.47.49 9 May 2019
+	Changes: Put back SORTOI xml data order lines by PO Line Number
+
+3.0.47.48 20 Mar 2019
+	Changes: Regenerated INVTBF
+
+3.0.47.47 9 Nov 2018
+	Changes: Updated WIPTLP
+
+3.0.45.47 2 Aug 2018
+	Changes: Added PORTGN
+
+3.0.44.45 14 Nov 2017
+	Fixes: Allow APSTIN TaxCode enums to emit blanks
+
+3.0.44.43 11 March 2017
+	Changes: Regenerate INVTMA
+	Fixes: Allow option to force logon of sessionId
+
+3.0.43.42 2 March 2017
+	Fixes: Fixed problem with Logoff of sessionKeys
+
+3.0.43.40 24 Feb 2017
+	Changes: (work around Syspro bug) - remove empty DeliveryLoad from SORTOI xml
+
+3.0.43.39 24 Jan 2017
+	Changes: Recreated SORTCH and SORTCL for Syspro 7
+
+3.0.42.39 2 Jan 2017
+	Changes: Recreated SORTOI for Syspro 7
+
+3.0.40.39 2 Nov 2016
+	Changes:
+		Added options P, V and E to TransactionType for APSTIN
+
+3.0.36.37 8 July 2016
+	Changes:
+		Added TPM fields to SORTOI
+
+3.0.35.37 25 April 2016
+	Changes:
+		Made PORTLR build XML for multiple Item elements
+
+3.0.34.37 11 April 2016
+	Changes:
+		Added IncludePriceList to SORRSL
+
+3.0.33.37 27 Jan 2016
+	Fixes:
+		Fixed my last fix!
+
+3.0.33.36 27 Jan 2016
+	Fixes:
+		Fixed Lines for PostCreditFromInvoiceItem to be a collection
+		
+3.0.33.35 20 Aug 2015
+	Changes:
+		Added SORTLS
+
+3.0.32.35 27/06/2015
+	Changes:
+		Added PORSSX
+	Fixes:
+		Fixed PORSSX
+
+3.0.31.34 18/06/2015
+    Changes:
+	    Changed Namespace to Codewell
+		Changed to .Net4.5
+		Upgraded NLog dependency.
+
+	Fixes:
+		Regenerated PORTSC
+
+2.0.31.33 26/05/2015
+	Fixes:
+		Fixed a problem with Function element of COMTFM Params
+
+2.0.31.32 07/05/2015
+    Fixes:
+	    Fixed COMFND
+		Made COMTFM work with user-supplied XMLData
+
+2.0.31.31 06/05/2015
+	Changes:
+		Added COMTFM
+
+2.0.29.31 28/07/2014
+	Changes:
+		Took dependency on NLog to build in logging of all calls.
+
+2.0.27.31 19/10/2012
+	Fixes:
+		Fixed the SecondTaxCode and LedgerSecondTaxCode enums for AP Invoice Posting
+
+2.0.27.30 25/07/2012
+	Changes:
+		Added GL Analysis Posting
+
+2.0.26.31 01/02/2012
+	Changes:
+		Added VesselDescription and EstimatedArrivalDate and ChargeableWeight to PORTLMDOC for use by Epicentre
+
+2.0.25.31
+	Fixes:
+		BinLocation in INVTMN is now a string instead of an Enum
+
+2.0.25.30 20/12/2011
+	Changes:
+		Added Route to PORTLMDOC for use by Epicentre
+
+2.0.24.30 26/11/2011
+	Changes:
+		Added LCT Shipment Maintenance (PORTLM)
+
+2.0.23.30 07/11/2011
+	Changes:
+		Added another overload for Utilities.TestLogon that accepts a WebServicesBaseAddress parameter
+
+2.0.22.30 04/11/2011
+	Fixes:
+		Thread-Safety: The Logon/Logoff need to use the same syncLock object. Now they do.  Also, the private
+				Logoff(sessionKey) method does not need a syncLock as it is being called from within syncLocked
+				code already.
+
+2.0.22.29 03/11/2011
+	Fixes:
+		Resolved shortcomings around v2.0.20.27's attempt at thread-safety; Had to implement a reference count;
+		
+2.0.22.28 25/10/2011
+	Changes:
+		Added a feature to specify a BaseAddress when calling SetLogonDetails
+
+2.0.21.28 24/10/2011
+	Fixes:
+		BinLocation in INVTMA is now a string instead of an Enum
+
+2.0.21.27: 5/10/2011
+	Changes:
+		Added DispatchNoteAddLine
+
+2.0.20.27:
+	Changes:
+		Made the Logon/Logoff thread-safe
+
+2.0.19.27 10/01/2011
+	Fixes:
+		Made the Item of WipShopFloorDataCollection.WipLaborPosting a collection as opposed to a singleton.
+
+2.0.19.26 4/11/2010
+	Fixes:
+		Fixed a bug that caused dispatch invoice lines to not be included in the objectmodel of DispatchInvoiceQuery if there was no line 1
+		
+
+2.0.19.25 14/10/2010
+	Fixes:
+		Fixed the MaintenanceOfWorkCentres business object.  All elements were generated from the XSD as collections!
+
+2.0.19.24 8 Sep 2010
+	Changes:
+		Added a CreateFromXMLOut method to the AdvancedTrialKittingQuery
+
+2.0.18.24
+	Fixes:
+		Moved the ReserveLotSerial posting to WipJobPrimaryPosting from WipTwoStageReceipting
+		
+2.0.18.23
+	Fixes:
+		Made the Item of BomRoutingMaintenance a collection as opposed to a singleton.
+
+2.0.17.23
+	Changes: Added FreightLine and MiscChargeLine to DispatchInvoiceQuery Output object hierarchy
+	
+2.0.6.12
+	Fixes: Removed Default xml setting from SORTDN since the Params were not being generated unless one specifies a non-default value,
+			and we need the params to generate.
+
+2.0.3.7
+	Fixes:
+		ATPQueryOutput now can be constructed from the XMLOut of ATPQuery 
+
+2.0.1.3
+	Changes:
+		Fixed WipJobPost and WipPartBillings XSD and regenerated.
+
+2.0.1.2
+	Changes:
+		Changed the GLPosting business object to reflect JournalDetails as a collection (instead of a singleton as generated from the XSD)
+
+2.0.1.1
+	Changes:
+		Removed license checking
+
+2.0.1.0
+	Changes:
+		Added blnThrowExceptionOnErrorsInXMLOut parameter to the Post methods
+		Removed CommonEnums

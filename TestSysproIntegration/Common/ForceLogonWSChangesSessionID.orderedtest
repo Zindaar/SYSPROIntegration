@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OrderedTest name="ForceLogonWSChangesSessionID" storage="d:\pi custom\tallbridge\sysprointegration\testsysprointegration\common\forcelogonwschangessessionid.orderedtest" id="02a59980-980d-407c-992c-b11f2e9769fe" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Css projectStructure="" iteration="" />
+  <Execution timeOut="2147483647" />
+  <Owners>
+    <Owner name="" />
+  </Owners>
+  <TestLinks>
+    <TestLink id="61f0008a-6af5-af10-cf99-42200aba000a" name="LogonDetailsIsInitiallyNothing" storage="..\bin\debug\testsysprointegration.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="ccf7caca-4b58-80f8-af8d-29754f323531" name="SetLogonDetailsWithWebServices" storage="..\bin\debug\testsysprointegration.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="efe32d23-2eca-3947-57e7-69bd8bd6e5a4" name="LogonWithWebServices" storage="..\bin\debug\testsysprointegration.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="849510f6-946b-ea8c-fed3-a8c585603242" name="ForceLogonWithWebServices" storage="..\bin\debug\testsysprointegration.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="b92e4e9a-d987-6fbc-ce8d-b7c886d1d839" name="Logoff" storage="..\bin\debug\testsysprointegration.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

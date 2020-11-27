@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://SYSPROWcfService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://SYSPROWcfService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://SYSPROWcfService/Imports">
+      <xsd:import schemaLocation="http://localhost:20091/SYSPROWCFService?xsd=xsd0" namespace="http://SYSPROWcfService" />
+      <xsd:import schemaLocation="http://localhost:20091/SYSPROWCFService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:20091/SYSPROWCFService?xsd=xsd2" namespace="http://schemas.microsoft.com/Message" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISYSPROWcfService_GetLogonProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLogonProfile" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_GetLogonProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLogonProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_Run_InputMessage">
+    <wsdl:part name="parameters" element="tns:Run" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_Run_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RunResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_QueryQueryW_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryQueryW" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_QueryQueryW_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryQueryWResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_TransactionPostW_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransactionPostW" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_TransactionPostW_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransactionPostWResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_GetImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetImage" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_GetImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_GetSystemInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemInformation" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_GetSystemInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSystemInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_GetVersion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersion" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_GetVersion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_CallGC_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallGC" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_CallGC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallGCResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_Encrypt_InputMessage">
+    <wsdl:part name="parameters" element="tns:Encrypt" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_Encrypt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EncryptResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_GetSYSPROMedia_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSYSPROMedia" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_GetSYSPROMedia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSYSPROMediaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_GetSYSPROImageThumbnail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSYSPROImageThumbnail" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_GetSYSPROImageThumbnail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSYSPROImageThumbnailResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_Logon_InputMessage">
+    <wsdl:part name="parameters" element="tns:Logon" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_Logon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogonResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_Logoff_InputMessage">
+    <wsdl:part name="parameters" element="tns:Logoff" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_Logoff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogoffResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_QueryBrowse_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryBrowse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_QueryBrowse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryBrowseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_QueryFetch_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryFetch" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_QueryFetch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryFetchResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_QueryQuery_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryQuery" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_QueryQuery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_NextKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:NextKey" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_NextKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NextKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_PreviousKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:PreviousKey" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_PreviousKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PreviousKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_SetupAdd_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetupAdd" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_SetupAdd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetupAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_SetupDelete_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetupDelete" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_SetupDelete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetupDeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_SetupUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetupUpdate" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_SetupUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetupUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_TransactionBuild_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransactionBuild" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_TransactionBuild_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransactionBuildResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_TransactionPost_InputMessage">
+    <wsdl:part name="parameters" element="tns:TransactionPost" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_TransactionPost_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransactionPostResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_CallBusinessObjectQueryStream_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallBusinessObjectQueryStream" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_CallBusinessObjectQueryStream_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallBusinessObjectQueryStreamResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_CallBusinessObjectQueryBinaryStream_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallBusinessObjectQueryBinaryStream" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_CallBusinessObjectQueryBinaryStream_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallBusinessObjectQueryBinaryStreamResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_GetDashboards_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDashboards" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_GetDashboards_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDashboardsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_GetSwfSize_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSwfSize" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_GetSwfSize_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSwfSizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_QueryDashboardScriptFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryDashboardScriptFile" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_QueryDashboardScriptFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryDashboardScriptFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_GenerateCredentialKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateCredentialKey" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_GenerateCredentialKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateCredentialKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_SearchSYSPRO_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchSYSPRO" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_SearchSYSPRO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchSYSPROResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_StockCodeXml_InputMessage">
+    <wsdl:part name="parameters" element="tns:StockCodeXml" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_StockCodeXml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StockCodeXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_StockCodeImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:StockCodeImage" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_StockCodeImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StockCodeImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_CMSImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:CMSImage" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_CMSImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CMSImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_ProvideMainFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProvideMainFile" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_ProvideMainFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProvideMainFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_ProvideImageFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProvideImageFile" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_ProvideImageFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProvideImageFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_SearchCustomerData_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCustomerData" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_SearchCustomerData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCustomerDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_SearchSupplierData_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchSupplierData" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_SearchSupplierData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchSupplierDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_SearchContactData_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchContactData" />
+  </wsdl:message>
+  <wsdl:message name="ISYSPROWcfService_SearchContactData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchContactDataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISYSPROWcfService">
+    <wsdl:operation name="GetLogonProfile">
+      <wsdl:input wsaw:Action="GetLogonProfile" message="tns:ISYSPROWcfService_GetLogonProfile_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/GetLogonProfileResponse" message="tns:ISYSPROWcfService_GetLogonProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Run">
+      <wsdl:input wsaw:Action="Run" message="tns:ISYSPROWcfService_Run_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/RunResponse" message="tns:ISYSPROWcfService_Run_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryQueryW">
+      <wsdl:input wsaw:Action="QueryQueryW" message="tns:ISYSPROWcfService_QueryQueryW_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/QueryQueryWResponse" message="tns:ISYSPROWcfService_QueryQueryW_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransactionPostW">
+      <wsdl:input wsaw:Action="TransactionPostW" message="tns:ISYSPROWcfService_TransactionPostW_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/TransactionPostWResponse" message="tns:ISYSPROWcfService_TransactionPostW_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImage">
+      <wsdl:input wsaw:Action="GetImage" message="tns:ISYSPROWcfService_GetImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/GetImageResponse" message="tns:ISYSPROWcfService_GetImage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemInformation">
+      <wsdl:input wsaw:Action="GetSystemInformation" message="tns:ISYSPROWcfService_GetSystemInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/GetSystemInformationResponse" message="tns:ISYSPROWcfService_GetSystemInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVersion">
+      <wsdl:input wsaw:Action="GetVersion" message="tns:ISYSPROWcfService_GetVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/GetVersionResponse" message="tns:ISYSPROWcfService_GetVersion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallGC">
+      <wsdl:input wsaw:Action="CallGC" message="tns:ISYSPROWcfService_CallGC_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/CallGCResponse" message="tns:ISYSPROWcfService_CallGC_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Encrypt">
+      <wsdl:input wsaw:Action="Encrypt" message="tns:ISYSPROWcfService_Encrypt_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/EncryptResponse" message="tns:ISYSPROWcfService_Encrypt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSYSPROMedia">
+      <wsdl:input wsaw:Action="GetSYSPROMedia" message="tns:ISYSPROWcfService_GetSYSPROMedia_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/GetSYSPROMediaResponse" message="tns:ISYSPROWcfService_GetSYSPROMedia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSYSPROImageThumbnail">
+      <wsdl:input wsaw:Action="GetSYSPROImageThumbnail" message="tns:ISYSPROWcfService_GetSYSPROImageThumbnail_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/GetSYSPROImageThumbnailResponse" message="tns:ISYSPROWcfService_GetSYSPROImageThumbnail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Logon">
+      <wsdl:input wsaw:Action="Logon" message="tns:ISYSPROWcfService_Logon_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/LogonResponse" message="tns:ISYSPROWcfService_Logon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Logoff">
+      <wsdl:input wsaw:Action="Logoff" message="tns:ISYSPROWcfService_Logoff_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/LogoffResponse" message="tns:ISYSPROWcfService_Logoff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryBrowse">
+      <wsdl:input wsaw:Action="QueryBrowse" message="tns:ISYSPROWcfService_QueryBrowse_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/QueryBrowseResponse" message="tns:ISYSPROWcfService_QueryBrowse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryFetch">
+      <wsdl:input wsaw:Action="QueryFetch" message="tns:ISYSPROWcfService_QueryFetch_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/QueryFetchResponse" message="tns:ISYSPROWcfService_QueryFetch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryQuery">
+      <wsdl:input wsaw:Action="QueryQuery" message="tns:ISYSPROWcfService_QueryQuery_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/QueryQueryResponse" message="tns:ISYSPROWcfService_QueryQuery_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NextKey">
+      <wsdl:input wsaw:Action="NextKey" message="tns:ISYSPROWcfService_NextKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/NextKeyResponse" message="tns:ISYSPROWcfService_NextKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousKey">
+      <wsdl:input wsaw:Action="PreviousKey" message="tns:ISYSPROWcfService_PreviousKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/PreviousKeyResponse" message="tns:ISYSPROWcfService_PreviousKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetupAdd">
+      <wsdl:input wsaw:Action="SetupAdd" message="tns:ISYSPROWcfService_SetupAdd_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/SetupAddResponse" message="tns:ISYSPROWcfService_SetupAdd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetupDelete">
+      <wsdl:input wsaw:Action="SetupDelete" message="tns:ISYSPROWcfService_SetupDelete_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/SetupDeleteResponse" message="tns:ISYSPROWcfService_SetupDelete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetupUpdate">
+      <wsdl:input wsaw:Action="SetupUpdate" message="tns:ISYSPROWcfService_SetupUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/SetupUpdateResponse" message="tns:ISYSPROWcfService_SetupUpdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransactionBuild">
+      <wsdl:input wsaw:Action="TransactionBuild" message="tns:ISYSPROWcfService_TransactionBuild_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/TransactionBuildResponse" message="tns:ISYSPROWcfService_TransactionBuild_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TransactionPost">
+      <wsdl:input wsaw:Action="TransactionPost" message="tns:ISYSPROWcfService_TransactionPost_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/TransactionPostResponse" message="tns:ISYSPROWcfService_TransactionPost_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallBusinessObjectQueryStream">
+      <wsdl:input wsaw:Action="CallBusinessObjectQueryStream" message="tns:ISYSPROWcfService_CallBusinessObjectQueryStream_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/CallBusinessObjectQueryStreamResponse" message="tns:ISYSPROWcfService_CallBusinessObjectQueryStream_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallBusinessObjectQueryBinaryStream">
+      <wsdl:input wsaw:Action="CallBusinessObjectQueryBinaryStream" message="tns:ISYSPROWcfService_CallBusinessObjectQueryBinaryStream_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/CallBusinessObjectQueryBinaryStreamResponse" message="tns:ISYSPROWcfService_CallBusinessObjectQueryBinaryStream_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDashboards">
+      <wsdl:input wsaw:Action="GetDashboards" message="tns:ISYSPROWcfService_GetDashboards_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/GetDashboardsResponse" message="tns:ISYSPROWcfService_GetDashboards_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSwfSize">
+      <wsdl:input wsaw:Action="GetSwfSize" message="tns:ISYSPROWcfService_GetSwfSize_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/GetSwfSizeResponse" message="tns:ISYSPROWcfService_GetSwfSize_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryDashboardScriptFile">
+      <wsdl:input wsaw:Action="QueryDashboardScriptFile" message="tns:ISYSPROWcfService_QueryDashboardScriptFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/QueryDashboardScriptFileResponse" message="tns:ISYSPROWcfService_QueryDashboardScriptFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateCredentialKey">
+      <wsdl:input wsaw:Action="GenerateCredentialKey" message="tns:ISYSPROWcfService_GenerateCredentialKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/GenerateCredentialKeyResponse" message="tns:ISYSPROWcfService_GenerateCredentialKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchSYSPRO">
+      <wsdl:input wsaw:Action="SearchSYSPRO" message="tns:ISYSPROWcfService_SearchSYSPRO_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/SearchSYSPROResponse" message="tns:ISYSPROWcfService_SearchSYSPRO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StockCodeXml">
+      <wsdl:input wsaw:Action="StockCodeXml" message="tns:ISYSPROWcfService_StockCodeXml_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/StockCodeXmlResponse" message="tns:ISYSPROWcfService_StockCodeXml_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StockCodeImage">
+      <wsdl:input wsaw:Action="StockCodeImage" message="tns:ISYSPROWcfService_StockCodeImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/StockCodeImageResponse" message="tns:ISYSPROWcfService_StockCodeImage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CMSImage">
+      <wsdl:input wsaw:Action="CMSImage" message="tns:ISYSPROWcfService_CMSImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/CMSImageResponse" message="tns:ISYSPROWcfService_CMSImage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProvideMainFile">
+      <wsdl:input wsaw:Action="ProvideMainFile" message="tns:ISYSPROWcfService_ProvideMainFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/ProvideMainFileResponse" message="tns:ISYSPROWcfService_ProvideMainFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProvideImageFile">
+      <wsdl:input wsaw:Action="ProvideImageFile" message="tns:ISYSPROWcfService_ProvideImageFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/ProvideImageFileResponse" message="tns:ISYSPROWcfService_ProvideImageFile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchCustomerData">
+      <wsdl:input wsaw:Action="SearchCustomerData" message="tns:ISYSPROWcfService_SearchCustomerData_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/SearchCustomerDataResponse" message="tns:ISYSPROWcfService_SearchCustomerData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchSupplierData">
+      <wsdl:input wsaw:Action="SearchSupplierData" message="tns:ISYSPROWcfService_SearchSupplierData_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/SearchSupplierDataResponse" message="tns:ISYSPROWcfService_SearchSupplierData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchContactData">
+      <wsdl:input wsaw:Action="SearchContactData" message="tns:ISYSPROWcfService_SearchContactData_InputMessage" />
+      <wsdl:output wsaw:Action="http://SYSPROWcfService/ISYSPROWcfService/SearchContactDataResponse" message="tns:ISYSPROWcfService_SearchContactData_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

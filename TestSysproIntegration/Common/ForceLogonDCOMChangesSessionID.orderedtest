@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OrderedTest name="ForceLogonDCOMChangesSessionID" storage="d:\pi custom\tallbridge\sysprointegration\testsysprointegration\common\forcelogondcomchangessessionid.orderedtest" id="8e5ab8f7-5419-4388-8e6f-00e7a4b41f45" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Css projectStructure="" iteration="" />
+  <Execution timeOut="2147483647" />
+  <Owners>
+    <Owner name="" />
+  </Owners>
+  <TestLinks>
+    <TestLink id="61f0008a-6af5-af10-cf99-42200aba000a" name="LogonDetailsIsInitiallyNothing" storage="..\bin\debug\testsysprointegration.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="192ec998-ddeb-0af1-badc-9368b3021f10" name="SetLogonDetailsWithWithDCOM" storage="..\bin\debug\testsysprointegration.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="15cae0e2-9611-34fb-61f2-0988846e0417" name="LogonWithDCOM" storage="..\bin\debug\testsysprointegration.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="b92e4e9a-d987-6fbc-ce8d-b7c886d1d839" name="Logoff" storage="..\bin\debug\testsysprointegration.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="2047ebf0-6b85-5414-71af-98e2065c287c" name="ForceLogonWithDCOM" storage="..\bin\debug\testsysprointegration.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

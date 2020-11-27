@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6BB7F4F0-1301-41BC-93E4-0044C568F1FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TestSysproIntegration</RootNamespace>
+    <AssemblyName>TestSysproIntegration</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TestSysproIntegration.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TestSysproIntegration.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>TestSysproIntegration.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>TestSysproIntegration.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APPrimaryPosting\InvoicePosting\TestPostAPInvoicePosting.vb" />
+    <Compile Include="ARPrimaryPosting\AccountsReceivableInvoicePosting\TestInvoicePosting.vb" />
+    <Compile Include="ARPrimaryPosting\PostARPaymentsAdjustmentsAndMiscellaneousReceipts\TestPostPaymentsAdjustments.vb" />
+    <Compile Include="ARPrimaryQuery\CreditManagementQuery\TestCreditManagementQuery.vb" />
+    <Compile Include="ARPrimaryQuery\CustomerQuery\TestCustomerQuery.vb" />
+    <Compile Include="BuildTest.vb" />
+    <Compile Include="Contact Management Primary Posting\ContactMngtAccountMaintenance\TestContactMngtAccountMaintenance.vb" />
+    <Compile Include="Contact Management Primary Posting\PostContact\TestPostContact.vb" />
+    <Compile Include="GeneralLedgerPrimaryPosting\PostGLAnalysis\TestPostGLAnalysis.vb" />
+    <Compile Include="PurchaseOrderGrnSystem\GrnPostGrnAdjustments\TestGRNAdjustments.vb" />
+    <Compile Include="SalesAnalysis\PostLostSale\TestPostLostSale.vb" />
+    <Compile Include="SalesOrderPrimaryQuery\DispatchInvoiceQuery\DispatchInvoiceDocumentTest.vb" />
+    <Compile Include="SalesOrderPrimaryQuery\DispatchNoteQuery\DispatchNoteDocumentTest.vb" />
+    <Compile Include="InventoryPrimaryQuery\ATPQuery\AtpQueryTest.vb" />
+    <Compile Include="Common\Common.vb" />
+    <Compile Include="Common\TestLogonDetails.vb" />
+    <Compile Include="GeneralLedgerPrimaryPosting\PostGLJournal\TestPostGLJournal.vb" />
+    <Compile Include="Inventory GIT System\GIT In\TestGITTransferIn.vb" />
+    <Compile Include="InventoryPrimaryPosting\CostChanges\TestInventoryMovementsCostChanges.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementsAdjustPhysical\TestInventoryMovementsAdjustPhysical.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PurchaseOrderRequisitionSystem\RouteRequisition\TestRouteRequisition.vb" />
+    <Compile Include="PurchaseOrdersPrimaryPosting\PurchaseOrderReceipts\TestPurchaseOrderReceipts.vb" />
+    <Compile Include="InventoryPrimaryQuery\ATPQuery\QueryTest.vb" />
+    <Compile Include="SalesOrderPrimaryQuery\SalesOrderInvoiceQuery\TestSalesOrderInvoiceQuery.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\AddDetailLineToExistingCreditNote\AddDetailLineToExistingCreditNoteTest.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\BackOrderRelease\TestBackOrderRelease.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\BuildSalesOrderLine\TestBuildSalesOrderLine.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\CreditNotetFromExistingInvoice\SOCreditNoteFromInvoiceTest.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\CreditNoteHeaderNotFromExistingInvoice\SOCreditNoteHeaderTest.vb" />
+    <Compile Include="PurchaseOrderLctSystem\ShipmentMaintenance\ShipmentMaintenanceTest.vb" />
+    <Compile Include="SystemQuery\COMGenericFind\COMGenericFindTest.vb" />
+    <Compile Include="SystemQuery\COMGenericFetch\COMGenericFetchTest.vb" />
+    <Compile Include="QuotationPrimaryPosting\QuotationEntryAndMaintenance\TestQuotationEntryAndMaintenance.vb" />
+    <Compile Include="SalesOrderPrimaryQuery\SalesOrderValuationQuery\TestSalesOrderValuationQuery.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\ChangeSOStatus\TestChangeSOStatus.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\DispatchNotePosting\TestDispatchNotePosting.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\GoodsInTransitTransferCreationFromSupplyChainTransfers\TestGITCreationFromSCT.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\SalesOrderImport\TestSalesOrderImport.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\SalesOrderSupplyChainTransfer\TestSupplyChainTransfer.vb" />
+    <Compile Include="SystemQuery\ProfileSettingsQuery\COMPRF.vb" />
+    <Compile Include="SystemSetup\BomRoutingMaintenance\BOMSROTest.vb" />
+    <Compile Include="SystemSetup\CustomerMaintenance\TestCustomerMaintenance.vb" />
+    <Compile Include="SystemSetup\CustomFormSetup\COMSFMTest.vb" />
+    <Compile Include="SystemSetup\InventoryStockCodeMaintenance\TestInventoryStockCodeMaintenance.vb" />
+    <Compile Include="BillOfMaterialPrimaryQuery\AdvancedTrialKittingQuery\TrialKittingQueryTest.vb" />
+    <Compile Include="SystemSetup\MaintenanceOfWorkCentres\BOMSWCTest.vb" />
+    <Compile Include="Utilities\UtilitiesTest.vb" />
+    <Compile Include="Utilities\TestUtilities.vb" />
+    <Compile Include="WIP Material Issue\TestWIPMaterialISsue.vb" />
+    <Compile Include="WIPPrimaryPosting\JobCreationAndMaintenance\TestWIPJobCreationAndMaintenance.vb" />
+    <Compile Include="WIPPrimaryPosting\PostJobReceipts\TestPostWIPJobReceipts.vb" />
+    <Compile Include="WIPPrimaryPosting\ReserveLotSerial\TestPostReservLotSerial.vb" />
+    <Compile Include="WIPPrimaryQuery\WIPQuery\WipQueryTest.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Common\LogonDCOMOrderedTest.orderedtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Common\ForceLogonDCOMChangesSessionID.orderedtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Common\ForceLogonWSChangesSessionID.orderedtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Common\LogonWSOrderedTest.orderedtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SysproIntegration\SysproIntegration.vbproj">
+      <Project>{459A188A-644E-4A39-8EFF-BB5C713B9C8B}</Project>
+      <Name>SysproIntegration</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ARPrimaryQuery\StockCodesPurchasedQuery\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PurchaseOrderLctSystem\ShipmentMaintenance\ShipmentMaintenanceTestData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

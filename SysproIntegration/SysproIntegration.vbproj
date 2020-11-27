@@ -1,0 +1,811 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{459A188A-644E-4A39-8EFF-BB5C713B9C8B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Codewell.SysproIntegration</AssemblyName>
+    <AssemblyOriginatorKeyFile>SysproIntegration.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>true</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Codewell.SysproIntegration</RootNamespace>
+    <StartupObject>Tallbridge.SysproIntegration.%28None%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SignAssembly>false</SignAssembly>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Codewell.SysproIntegration.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Codewell.SysproIntegration.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>Codewell.SysproIntegration.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>Codewell.SysproIntegration.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NLog.4.0.0\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="SYSPROWCFServicesClientLibrary40">
+      <HintPath>..\References\SYSPROWCFServicesClientLibrary40.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GeneralLedgerPrimaryPosting\GlAnalysisPosting\GENTAN.vb" />
+    <Compile Include="GeneralLedgerPrimaryPosting\GlAnalysisPosting\GENTANDOC.vb" />
+    <Compile Include="GeneralLedgerPrimaryPosting\GlAnalysisPosting\GENTANOUT.vb" />
+    <Compile Include="PurchaseOrderGrnSystem\GrnPostGrnAdjustments\PORTGN.vb" />
+    <Compile Include="PurchaseOrderGrnSystem\GrnPostGrnAdjustments\PORTGNDOC.vb" />
+    <Compile Include="PurchaseOrderLctSystem\LctShipmentMaintenance\PORTLM.vb" />
+    <Compile Include="PurchaseOrderLctSystem\LctShipmentMaintenance\PORTLMDOC.vb" />
+    <Compile Include="PurchaseOrdersPrimaryPosting\PurchaseOrderReceiptsReversal\PORTRO.vb" />
+    <Compile Include="PurchaseOrdersPrimaryPosting\PurchaseOrderReceiptsReversal\PORTRODOC.vb" />
+    <Compile Include="SalesAnalysis\LostSalesPosting\SALTLS.vb" />
+    <Compile Include="SalesAnalysis\LostSalesPosting\SALTLSDOC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\AddDetailLineToExistingCreditNote\SORTCL.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\AddDetailLineToExistingCreditNote\SORTCLDOC.vb" />
+    <Compile Include="APPrimaryPosting\AccountsPayableInvoicePosting\APSTIN.vb" />
+    <Compile Include="APPrimaryPosting\AccountsPayableInvoicePosting\APSTINDOC.vb" />
+    <Compile Include="APPrimaryPosting\PostAPRegisterInvoice\APSTRI.vb" />
+    <Compile Include="APPrimaryPosting\PostAPRegisterInvoice\APSTRIDOC.vb" />
+    <Compile Include="APPrimaryQuery\SupplierQuery\APSQRY.vb" />
+    <Compile Include="APPrimaryQuery\SupplierQuery\APSQRYOUT.vb" />
+    <Compile Include="ARPrimaryPosting\AccountsReceivableInvoicePosting\ARSTIN.vb" />
+    <Compile Include="ARPrimaryPosting\AccountsReceivableInvoicePosting\ARSTINDOC.vb" />
+    <Compile Include="ARPrimaryPosting\PostARPaymentsAdjustmentsAndMiscellaneousReceipts\ARSTPY.vb" />
+    <Compile Include="ARPrimaryPosting\PostARPaymentsAdjustmentsAndMiscellaneousReceipts\ARSTPYDOC.vb" />
+    <Compile Include="ARPrimaryPosting\RecalculateCustomerCreditStatus\ARSTCR.vb" />
+    <Compile Include="ARPrimaryPosting\RecalculateCustomerCreditStatus\ARSTCRDOC.vb" />
+    <Compile Include="ARPrimaryQuery\ARCurrencyVarianceInterfaceQuery\ARSQPL.vb" />
+    <Compile Include="ARPrimaryQuery\ARCurrencyVarianceInterfaceQuery\ARSQPLOUT.vb" />
+    <Compile Include="ARPrimaryQuery\ARCustomerStockCodeQuery\IMPQ25.vb" />
+    <Compile Include="ARPrimaryQuery\ARCustomerStockCodeQuery\IMPQ25OUT.vb" />
+    <Compile Include="ARPrimaryQuery\ARMasterSubAccountQuery\IMPQ31.vb" />
+    <Compile Include="ARPrimaryQuery\ARMasterSubAccountQuery\IMPQ31OUT.vb" />
+    <Compile Include="ARPrimaryQuery\ARPostDateCheckQuery\ARSQPD.vb" />
+    <Compile Include="ARPrimaryQuery\ARPostDateCheckQuery\ARSQPDOUT.vb" />
+    <Compile Include="ARPrimaryQuery\CreditManagementQuery\ARSQCR.vb" />
+    <Compile Include="ARPrimaryQuery\CreditManagementQuery\ARSQCROUT.vb" />
+    <Compile Include="ARPrimaryQuery\CustomerQuery\ARSQRY.vb" />
+    <Compile Include="ARPrimaryQuery\CustomerQuery\ARSQRYOUT.vb" />
+    <Compile Include="ARPrimaryQuery\StockCodesPurchasedQuery\ARSQIP.vb" />
+    <Compile Include="ARPrimaryQuery\StockCodesPurchasedQuery\ARSQIPOUT.vb" />
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssetsRegisterPrimaryPosting\AssetCount\ASSTCI.vb" />
+    <Compile Include="AssetsRegisterPrimaryPosting\AssetCount\ASSTCIDOC.vb" />
+    <Compile Include="AssetsRegisterPrimaryPosting\AssetMaintenance\ASSTAS.vb" />
+    <Compile Include="AssetsRegisterPrimaryPosting\AssetMaintenance\ASSTASDOC.vb" />
+    <Compile Include="AssetsRegisterPrimaryPosting\CreateAssetInSuspense\ASSTCS.vb" />
+    <Compile Include="AssetsRegisterPrimaryPosting\CreateAssetInSuspense\ASSTCSDOC.vb" />
+    <Compile Include="AssetsRegisterPrimaryQuery\AssetDepreciationCalculation\ASSQDP.vb" />
+    <Compile Include="AssetsRegisterPrimaryQuery\AssetListOfCostCenters\ASSQCC.vb" />
+    <Compile Include="AssetsRegisterPrimaryQuery\AssetListOfDepreciationAdjustments\ASSQDL.vb" />
+    <Compile Include="AssetsRegisterPrimaryQuery\AssetListOfMasterSubAssets\ASSQL6.vb" />
+    <Compile Include="AssetsRegisterPrimaryQuery\AssetListOfRevaluations\ASSQRL.vb" />
+    <Compile Include="AssetsRegisterPrimaryQuery\AssetListOfTransfers\ASSQTL.vb" />
+    <Compile Include="AssetsRegisterPrimaryQuery\CapexManagementSummary\ASSQCS.vb" />
+    <Compile Include="AssetsRegisterPrimaryQuery\CapexManagementSummary\ASSQCSOUT.vb" />
+    <Compile Include="AssetsRegisterPrimaryQuery\CapexProjection\ASSQPR.vb" />
+    <Compile Include="AssetsRegisterPrimaryQuery\CapexProjection\ASSQPROUT.vb" />
+    <Compile Include="BillOfMaterialPrimaryQuery\AdvancedTrialKittingQuery\BOMQTK.vb" />
+    <Compile Include="BillOfMaterialPrimaryQuery\AdvancedTrialKittingQuery\BOMQTKOUT.vb" />
+    <Compile Include="BillOfMaterialPrimaryQuery\BomProgressiveScrapQuery\BOMQPS.vb" />
+    <Compile Include="BillOfMaterialPrimaryQuery\BomRoutingQuery\BOMQRO.vb" />
+    <Compile Include="BillOfMaterialPrimaryQuery\BomRoutingQuery\BOMQROOUT.vb" />
+    <Compile Include="BillOfMaterialPrimaryQuery\CostingQuery\BOMQRY.vb" />
+    <Compile Include="BillOfMaterialPrimaryQuery\CostingQuery\BOMQRYOUT.vb" />
+    <Compile Include="BlanketSOAndReleases\BlanketSalesOrderAndReleasesQuery\SORQBS.vb" />
+    <Compile Include="CashBookPrimaryPosting\PostDepositsAndWithdrawalsToCashBook\CSHTWD.vb" />
+    <Compile Include="CashBookPrimaryPosting\PostDepositsAndWithdrawalsToCashBook\CSHTWDDOC.vb" />
+    <Compile Include="CashBookPrimaryQuery\CashBookBankBalanceQuery\CSHQ45.vb" />
+    <Compile Include="CashBookPrimaryQuery\CashBookBankBalanceQuery\CSHQ45OUT.vb" />
+    <Compile Include="CashBookPrimaryQuery\CashBookTransactionQuery\CSHQRY.vb" />
+    <Compile Include="CashBookPrimaryQuery\CashBookTransactionQuery\CSHQRYOUT.vb" />
+    <Compile Include="Common\LogonDetails.vb" />
+    <Compile Include="Common\NullHandler.vb" />
+    <Compile Include="Common\SysproException.vb" />
+    <Compile Include="Common\SysproUtilities.vb" />
+    <Compile Include="Common\CommonEnums.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContactManagementPrimaryPosting\ContactActivityPosting\CMSTAT.vb" />
+    <Compile Include="ContactManagementPrimaryPosting\ContactManagementAccountMaintenance\CMSSAC.vb" />
+    <Compile Include="ContactManagementPrimaryPosting\ContactManagementAccountMaintenance\CMSSACDOC.vb" />
+    <Compile Include="ContactManagementPrimaryPosting\ContactPostContact\CMSTCO.vb" />
+    <Compile Include="ContactManagementPrimaryPosting\ContactPostContact\CMSTCODOC.vb" />
+    <Compile Include="ContactManagementPrimaryPosting\ContactPostDeleteContact\CMSTCD.vb" />
+    <Compile Include="ContactManagementPrimaryPosting\ContactPostDeleteContact\CMSTCDDOC.vb" />
+    <Compile Include="ContactManagementPrimaryQuery\ContactActivityQuery\CMSQAT.vb" />
+    <Compile Include="ContactManagementPrimaryQuery\ContactActivityQuery\CMSQEM.vb" />
+    <Compile Include="ContactManagementPrimaryQuery\ContactQueryByOrganization\CMSQRC.vb" />
+    <Compile Include="ContactManagementPrimaryQuery\ContactQuery\CMSQRYOUT.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\CreditNoteHeaderNotFromExistingInvoice\SORTCH.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\CreditNoteHeaderNotFromExistingInvoice\SORTCHDOC.vb" />
+    <Compile Include="GeneralLedgerPrimaryPosting\GLCommitmentPostTransaction\GENTCO.vb" />
+    <Compile Include="GeneralLedgerPrimaryPosting\GLCommitmentPostTransaction\GENTCODOC.vb" />
+    <Compile Include="GeneralLedgerPrimaryPosting\PostJournalsToGLSystemNormalProvisionalUserDefinedStatisticalAlternateCurrency\GENTJL.vb" />
+    <Compile Include="GeneralLedgerPrimaryPosting\PostJournalsToGLSystemNormalProvisionalUserDefinedStatisticalAlternateCurrency\GENTJLDOC.vb">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="GeneralLedgerPrimaryPosting\PostJournalsToGLSystemNormalProvisionalUserDefinedStatisticalAlternateCurrency\GENTJLOUT.vb">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="GeneralLedgerPrimaryQuery\BasicGLQuery\GENQRY.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\BasicGLQuery\GENQRYOUT.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\GeneralLedgerZoom\GENQZM.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\GeneralLedgerZoom\GENQZMOUT.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\GLAnalysisQuery\GENQGA.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\GLAnalysisQuery\GENQGAOUT.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\GLAnalysis\GENQAN.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\GLAnalysis\GENQANOUT.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\GLJournalQuery\GENQJR.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\GLPaymentsLedgerInterfaceQuery\IMPQPL.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\GLRevaluationCategoriesQuery\GENQ6C.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\GLRevaluationCategoriesQuery\GENQ6COUT.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\GLSalesLedgerInterfaceQuery\IMPQ29.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\GLSalesLedgerInterfaceQuery\IMPQ29OUT.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\GLStructureQuery\GENQST.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\GLStructureQuery\GENQSTOUT.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\QueryCommitmentValues\GENQCO.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\QueryCommitmentValues\GENQCOOUT.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\ValidateALedgerCodeEntry\GENQGL.vb" />
+    <Compile Include="GeneralLedgerPrimaryQuery\ValidateALedgerCodeEntry\GENQGLOUT.vb" />
+    <Compile Include="InventoryGoodsInTransitSystem\GoodInTransitQuery\INVQGT.vb" />
+    <Compile Include="InventoryGoodsInTransitSystem\InventoryMovementsGitTransfersIn\INVTMN.vb" />
+    <Compile Include="InventoryGoodsInTransitSystem\InventoryMovementsGitTransfersIn\INVTMNDOC.vb" />
+    <Compile Include="InventoryGoodsInTransitSystem\InventoryMovementsGitTransfersOut\INVTMT.vb" />
+    <Compile Include="InventoryGoodsInTransitSystem\InventoryMovementsGitTransfersOut\INVTMTDOC.vb" />
+    <Compile Include="InventoryInspectionSystem\GoodsInInspectionBuild\PORRIN.vb" />
+    <Compile Include="InventoryInspectionSystem\GoodsInInspectionCounts\PORTIC.vb" />
+    <Compile Include="InventoryInspectionSystem\GoodsInInspectionCounts\PORTICDOC.vb" />
+    <Compile Include="InventoryInspectionSystem\GoodsInInspectionRejects\PORTIR.vb" />
+    <Compile Include="InventoryInspectionSystem\GoodsInInspectionRejects\PORTIRDOC.vb" />
+    <Compile Include="InventoryInspectionSystem\GoodsInInspectionReturns\PORTIX.vb" />
+    <Compile Include="InventoryInspectionSystem\GoodsInInspectionReturns\PORTIXDOC.vb" />
+    <Compile Include="InventoryInspectionSystem\GoodsInInspectionReturns\PORTLM.vb" />
+    <Compile Include="InventoryInspectionSystem\GoodsInInspectionReturns\PORTLMDOC.vb" />
+    <Compile Include="InventoryInspectionSystem\GoodsInInspectionScraps\PORTIS.vb" />
+    <Compile Include="InventoryInspectionSystem\GoodsInInspectionScraps\PORTISDOC.vb" />
+    <Compile Include="InventoryInspectionSystem\InspectionQuery\PORQIN.vb" />
+    <Compile Include="InventoryInspectionSystem\InspectionQuery\PORQINOUT.vb" />
+    <Compile Include="InventoryInspectionSystem\PurchaseOrderInspections\PORTII.vb" />
+    <Compile Include="InventoryInspectionSystem\PurchaseOrderInspections\PORTIIDOC.vb" />
+    <Compile Include="InventoryPrimaryPosting\Backflushing\INVTBF.vb" />
+    <Compile Include="InventoryPrimaryPosting\Backflushing\INVTBFDOC.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementBuildExpenseIssues\INVRMO.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementsAdjustPhysical\INVTMA.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementsAdjustPhysical\INVTMADOC.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementsBinTransfers\INVTMB.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementsBinTransfers\INVTMBDOC.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementsCostChanges\INVTMC.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementsCostChanges\INVTMCDOC.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementsCostModifications\INVTMM.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementsCostModifications\INVTMMDOC.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementsExpenseIssues\INVTME.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementsExpenseIssues\INVTMEDOC.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementsReceipts\INVTMR.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementsReceipts\INVTMRDOC.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementsWarehouseTransfersIn\INVTMI.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementsWarehouseTransfersIn\INVTMIDOC.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementsWarehouseTransfersOut\INVTMO.vb" />
+    <Compile Include="InventoryPrimaryPosting\InventoryMovementsWarehouseTransfersOut\INVTMODOC.vb" />
+    <Compile Include="InventoryPrimaryQuery\InventoryAvailableToPromiseQuery\INVQAT.vb" />
+    <Compile Include="InventoryPrimaryQuery\InventoryAvailableToPromiseQuery\INVQATOUT.vb" />
+    <Compile Include="InventoryPrimaryQuery\InventoryDocumentQuery\INVQID.vb" />
+    <Compile Include="InventoryPrimaryQuery\InventoryDocumentQuery\INVQIDOUT.vb" />
+    <Compile Include="InventoryPrimaryQuery\InventoryGenericReportingQuery\INVQRP.vb" />
+    <Compile Include="InventoryPrimaryQuery\InventoryGenericReportingQuery\INVQRPOUT.vb" />
+    <Compile Include="InventoryPrimaryQuery\InventoryPriceHistory\INVQPH.vb" />
+    <Compile Include="InventoryPrimaryQuery\InventoryPriceList\INVQPL.vb" />
+    <Compile Include="InventoryPrimaryQuery\InventoryQuery\INVQRY.vb" />
+    <Compile Include="InventoryPrimaryQuery\InventoryQuery\INVQRYOUT.vb" />
+    <Compile Include="InventoryPrimaryQuery\InventoryValuationQuery\INVQVL.vb" />
+    <Compile Include="InventoryPrimaryQuery\InventoryWhereReferencedQuery\INVQWR.vb" />
+    <Compile Include="InventoryPrimaryQuery\InventoryWhereReferencedQuery\INVQWROUT.vb" />
+    <Compile Include="InventoryPrimaryQuery\ListOfStockCodesFilteredByOperatorAccess\INVQSL.vb" />
+    <Compile Include="InventoryPrimaryQuery\ListOfStockCodesFilteredByOperatorAccess\INVQSLOUT.vb" />
+    <Compile Include="InventoryProductConfigurator\InitialiseTheConfigurationGroupOfObjects\CFGTPC.vb" />
+    <Compile Include="InventoryProductConfigurator\InitialiseTheConfigurationGroupOfObjects\CFGTPCDOC.vb" />
+    <Compile Include="InventoryProductConfigurator\ProductConfiguratorFinishDetails\CFGTFD.vb" />
+    <Compile Include="InventoryProductConfigurator\ProductConfiguratorFinishDetails\CFGTFDDOC.vb" />
+    <Compile Include="InventoryProductConfigurator\ProductConfiguratorFinishDetails\CFGTFDOUT.vb" />
+    <Compile Include="InventoryProductConfigurator\ProductConfiguratorOptions\CFGTOC.vb" />
+    <Compile Include="InventoryProductConfigurator\ProductConfiguratorOptions\CFGTOCDOC.vb" />
+    <Compile Include="InventoryProductConfigurator\ProductConfiguratorOptions\CFGTOCOUT.vb" />
+    <Compile Include="InventoryProductConfigurator\ProductConfiguratorParentDetails\CFGTPD.vb" />
+    <Compile Include="InventoryProductConfigurator\ProductConfiguratorParentDetails\CFGTPDDOC.vb" />
+    <Compile Include="InventoryProductConfigurator\ProductConfiguratorParentDetails\CFGTPDOUT.vb" />
+    <Compile Include="InventoryProductConfigurator\ProductConfiguratorProgressQuery\CFGQRY.vb" />
+    <Compile Include="InventoryProductConfigurator\ProductConfiguratorSelectionCriteria\CFGTSC.vb" />
+    <Compile Include="InventoryProductConfigurator\ProductConfiguratorSelectionCriteria\CFGTSCDOC.vb" />
+    <Compile Include="InventorySerialTracking\SerialTrackingQuery\INVQSE.vb" />
+    <Compile Include="InventorySerialTracking\SerialTrackingQuery\INVQSEOUT.vb" />
+    <Compile Include="InventorySerialTracking\SerialTrackingTransactionPosting\INVTSR.vb" />
+    <Compile Include="InventorySerialTracking\SerialTrackingTransactionPosting\INVTSRDOC.vb" />
+    <Compile Include="InventoryStockTakeSystem\ConfirmStockTake\INVTSU.vb" />
+    <Compile Include="InventoryStockTakeSystem\ConfirmStockTake\INVTSUDOC.vb" />
+    <Compile Include="InventoryStockTakeSystem\InventoryStockTakeImport\INVTSC.vb" />
+    <Compile Include="InventoryStockTakeSystem\InventoryStockTakeImport\INVTSCDOC.vb" />
+    <Compile Include="InventoryStockTakeSystem\InventoryStockTakeTicketDocumentQuery\INVQST.vb" />
+    <Compile Include="InventoryStockTakeSystem\InventoryStockTakeTicketDocumentQuery\INVQSTOUT.vb" />
+    <Compile Include="InventoryStockTakeSystem\StockTakeQueries\INVQSR.vb" />
+    <Compile Include="InventoryStockTakeSystem\StockTakeQueries\INVQSROUT.vb" />
+    <Compile Include="LotTraceability\LotTraceabilityQuery\LOTQRY.vb" />
+    <Compile Include="MrpPrimaryPosting\MrpBuildScheduleMaintenance\MRPTBS.vb" />
+    <Compile Include="MrpPrimaryPosting\MrpBuildScheduleMaintenance\MRPTBSDOC.vb" />
+    <Compile Include="MrpPrimaryPosting\MrpForecastMaintenance\MRPTFO.vb" />
+    <Compile Include="MrpPrimaryPosting\MrpForecastMaintenance\MRPTFODOC.vb" />
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Query\IQuery.vb" />
+    <Compile Include="Common\Query\Query.vb" />
+    <Compile Include="Common\BusinessObjects\SerialAllocation.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\BusinessObjects\SerialNumber.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Setup\ISetup.vb" />
+    <Compile Include="Common\Setup\Setup.vb" />
+    <Compile Include="Common\Transaction\IBuild.vb" />
+    <Compile Include="Common\Transaction\ITransaction.vb" />
+    <Compile Include="Common\Transaction\Transaction.vb" />
+    <Compile Include="Common\Utilities\Utilities.vb" />
+    <Compile Include="PurchaseOrderGrnSystem\PostGrnDetails\PORTGR.vb" />
+    <Compile Include="PurchaseOrderGrnSystem\PostGrnDetails\PORTGRDOC.vb" />
+    <Compile Include="PurchaseOrderLctSystem\LctReceiptBuild\PORRLR.vb" />
+    <Compile Include="PurchaseOrderLctSystem\LctShipmentReceipt\PORTLR.vb" />
+    <Compile Include="PurchaseOrderLctSystem\LctShipmentReceipt\PORTLRDOC.vb" />
+    <Compile Include="PurchaseOrderRequistionSystem\BuildRequisitionLineInformation\PORRRQ.vb" />
+    <Compile Include="PurchaseOrderRequistionSystem\RequisitionApproveClear\PORTRA.vb" />
+    <Compile Include="PurchaseOrderRequistionSystem\RequisitionApproveClear\PORTRADOC.vb" />
+    <Compile Include="PurchaseOrderRequistionSystem\RequisitionCancel\PORTRCDOC.vb" />
+    <Compile Include="PurchaseOrderRequistionSystem\RequisitionEntry\PORTRQ.vb" />
+    <Compile Include="PurchaseOrderRequistionSystem\RequisitionEntry\PORTRQDOC.vb" />
+    <Compile Include="PurchaseOrderRequistionSystem\RequisitionHold\PORTRH.vb" />
+    <Compile Include="PurchaseOrderRequistionSystem\RequisitionHold\PORTRHDOC.vb" />
+    <Compile Include="PurchaseOrderRequistionSystem\RequisitionQuery\PORQRQ.vb" />
+    <Compile Include="PurchaseOrderRequistionSystem\RequisitionQuery\PORQRQOUT.vb" />
+    <Compile Include="PurchaseOrderRequistionSystem\RouteRequisition\PORTRRDOC.vb" />
+    <Compile Include="PurchaseOrdersPrimaryPosting\AddChangeAPurchaseOrder\PORTOI.vb" />
+    <Compile Include="PurchaseOrdersPrimaryPosting\AddChangeAPurchaseOrder\PORTOIDOC.vb" />
+    <Compile Include="PurchaseOrdersPrimaryPosting\CalculateNonMerchandiseValueUsingCostMultiplier\PORRNM.vb" />
+    <Compile Include="PurchaseOrdersPrimaryPosting\PurchaseOrderBuildLineInformation\PORRPL.vb" />
+    <Compile Include="PurchaseOrdersPrimaryPosting\PurchaseOrderReceipts\PORTOR.vb" />
+    <Compile Include="PurchaseOrdersPrimaryPosting\PurchaseOrderReceipts\PORTORDOC.vb" />
+    <Compile Include="PurchaseOrdersPrimaryPosting\ReversePurchaseOrderReceiptInInspection\PORTRI.vb" />
+    <Compile Include="PurchaseOrdersPrimaryPosting\ReversePurchaseOrderReceiptInInspection\PORTRIDOC.vb" />
+    <Compile Include="PurchaseOrdersPrimaryQuery\ListOfPurchaseOrders\PORQPO.vb" />
+    <Compile Include="PurchaseOrdersPrimaryQuery\ListOfPurchaseOrders\PORQPOOUT.vb" />
+    <Compile Include="PurchaseOrdersPrimaryQuery\PurchaseOrderQuery\PORQRY.vb" />
+    <Compile Include="PurchaseOrdersPrimaryQuery\PurchaseOrderQuery\PORQRYOUT.vb" />
+    <Compile Include="PurchaseOrdersPrimaryQuery\PurchaseOrderValuation\PORQOV.vb" />
+    <Compile Include="PurchaseOrdersPrimaryQuery\PurchaseOrderValuation\PORQOVOUT.vb" />
+    <Compile Include="PurchaseOrderSupplierContracts\PurchaseOrderSupplierContract\PORTSC.vb" />
+    <Compile Include="PurchaseOrderSupplierContracts\PurchaseOrderSupplierContract\PORTSCDOC.vb" />
+    <Compile Include="QuotationsPrimaryPosting\BuildQuotationHeader\QOTRQH.vb" />
+    <Compile Include="QuotationsPrimaryPosting\QuotationEntryAndMaintenance\QOTTQI.vb" />
+    <Compile Include="QuotationsPrimaryPosting\QuotationEntryAndMaintenance\QOTTQIDOC.vb" />
+    <Compile Include="QuotationsPrimaryPosting\QuotationHierarchyMaintenance\QOTTHR.vb" />
+    <Compile Include="QuotationsPrimaryPosting\QuotationHierarchyMaintenance\QOTTHRDOC.vb" />
+    <Compile Include="QuotationsPrimaryQuery\QuotationQuery\QOTQRY.vb" />
+    <Compile Include="QuotationsPrimaryQuery\QuotationQuery\QOTQRYOUT.vb" />
+    <Compile Include="ReportWriterQuery\ReportWriterQuery\REPQRY.vb" />
+    <Compile Include="SalesOrdersContractPricing\SalesOrderContractPriceQuery\SORQCP.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\BackOrderReleasesImport\SORTBO.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\BackOrderReleasesImport\SORTBODOC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\BuildSalesOrderHeader\SORRSH.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\BuildSalesOrderLine\SORRSL.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\CancelDispatchNotes\SORTDC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\CancelDispatchNotes\SORTDCDOC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\CancelWholeSalesOrderOrSelectedDetailLines\SORTOX.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\CancelWholeSalesOrderOrSelectedDetailLines\SORTOXDOC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\ChangeSalesOrderStatus\SORTOS.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\ChangeSalesOrderStatus\SORTOSDOC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\CreditNoteFromExistingInvoiceDispatchNote\SORTCI.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\CreditNoteFromExistingInvoiceDispatchNote\SORTCIDOC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\DispatchNoteAddLines\SORTDA.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\DispatchNoteAddLines\SORTDADOC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\GoodsInTransitTransferCreationFromDispatchNotes\SORTGC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\GoodsInTransitTransferCreationFromDispatchNotes\SORTGCDOC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\GoodsInTransitTransferCreationFromSupplyChainTransfers\SORTSC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\GoodsInTransitTransferCreationFromSupplyChainTransfers\SORTSCDOC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\InvoiceCalculationFromDispatchNote\SORTNC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\InvoiceCalculationFromDispatchNote\SORTNCDOC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\InvoiceCalculationFromSalesOrder\SORTIC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\InvoiceCalculationFromSalesOrder\SORTICDOC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\SalesOrderBackOrderReleaseBuild\SORRBO.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\SalesOrderDispatchNotePosting\SORTDN.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\SalesOrderDispatchNotePosting\SORTDNDOC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\SalesOrderImport\SORTOI.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\SalesOrderImport\SORTOIDOC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\SalesOrderSupplyChainTransfer\SORTTR.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\SalesOrderSupplyChainTransfer\SORTTRDOC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\SoTpmResetTradePromotionsBudget\TPMTPL.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\SoTpmResetTradePromotionsBudget\TPMTPLDOC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\SoTradePromotionsBuildSoDetails\TPMRQP.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\TpmPriceMaintenance\TPMTM7.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\TpmPriceMaintenance\TPMTM7DOC.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\TradePromotionsAddPromotionsToOrder\TPMTAP.vb" />
+    <Compile Include="SalesOrdersPrimaryPosting\TradePromotionsAddPromotionsToOrder\TPMTAPDOC.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\ConsolidatedDispatchInvoiceQuery\SORQCD.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchDocumentQuery\SORQDD.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchInvoiceQuery\Output\BinLine.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchInvoiceQuery\Output\BinLineCollection.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchInvoiceQuery\Output\CommentLine.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchInvoiceQuery\Output\MiscChargeLine.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchInvoiceQuery\Output\FreightLine.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchInvoiceQuery\Output\DispatchInvoiceDocument.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchInvoiceQuery\Output\DispatchInvoiceTotalSection.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchInvoiceQuery\Output\Header.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchInvoiceQuery\Output\IDispatchInvoiceLine.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchInvoiceQuery\Output\MerchandiseLine.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchInvoiceQuery\SORQND.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchNoteQuery\Output\BinLine.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchNoteQuery\Output\BinLineCollection.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchNoteQuery\Output\CommentLine.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchNoteQuery\Output\DispatchNoteLineCollection.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchNoteQuery\Output\DispatchNoteDocument.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchInvoiceQuery\Output\DispatchInvoiceLineCollection.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchNoteQuery\Output\Header.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchNoteQuery\Output\IDispatchNoteLine.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchNoteQuery\Output\MerchandiseLine.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchNoteQuery\SORQDN.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchNoteValuationQuery\SORQDV.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\DispatchNoteValuationQuery\SORQDVOUT.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\ListOfDispatchNotes\SORQDL.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\ListOfDispatchNotes\SORQDLOUT.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\ListOfSalesOrders\SORQSO.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\ListOfSalesOrders\SORQSOOUT.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\OrderAcknowledgementAndDeliveryNoteQuery\SORQOD.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\OrderAcknowledgementAndDeliveryNoteQuery\SORQODOUT.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\SalesOrderInvoiceQuery\SORQID.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\SalesOrderQuery\SORQRY.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\SalesOrderQuery\SORQRYOUT.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\SalesOrderValuationQuery\SORQOV.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\SalesOrderValuationQuery\SORQOVOUT.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\TpmJournalPrintQuery\TPMQJN.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\TpmPricingDetailQuery\TPMQPD.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\TpmPricingQuery\TPMQPP.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\TpmPromotionCodeQuery\TPMQPC.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\TpmPromotionDetailQuery\TPMQTN.vb" />
+    <Compile Include="SalesOrdersPrimaryQuery\TradePromotionsQualificationQuery\TPMQQP.vb" />
+    <Compile Include="Service References\SysproWCF\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPosting\ComMsmqToApplication\COMT2A.vb" />
+    <Compile Include="SystemPosting\ComPostEmailBusinessObject\COMT2E.vb" />
+    <Compile Include="SystemPosting\ComPostMessageToOperatorInbox\COMTIBDOC.vb" />
+    <Compile Include="SystemPosting\ComPostMessageToOperatorInbox\COMTIM.vb" />
+    <Compile Include="SystemPosting\ComPostMessageToOperatorInbox\COMTIMDOC.vb" />
+    <Compile Include="SystemPosting\CustomFormPost\COMTFM.vb" />
+    <Compile Include="SystemPosting\CustomFormPost\COMTFMDOC.vb" />
+    <Compile Include="SystemQuery\ComGenericBrowse\COMBRW.vb" />
+    <Compile Include="SystemQuery\ComGenericFetch\COMFCH.vb" />
+    <Compile Include="SystemQuery\ComGenericFind\COMFND.vb" />
+    <Compile Include="SystemQuery\ExecutiveViewQuery\COMQEX.vb" />
+    <Compile Include="SystemQuery\ExecutiveViewQuery\COMQEXOUT.vb" />
+    <Compile Include="SystemQuery\ListOfValidSysproCompanies\COMQCO.vb" />
+    <Compile Include="SystemQuery\ListOfValidSysproCompanies\COMQCOOUT.vb" />
+    <Compile Include="SystemQuery\MultimediaQuery\COMQMM.vb" />
+    <Compile Include="SystemQuery\MultimediaQuery\COMQMMOUT.vb" />
+    <Compile Include="SystemQuery\ProfileSettingsQuery\COMPRF.vb" />
+    <Compile Include="SystemSetup\AccountPayableSupplierMaintenance\APSSSP.vb" />
+    <Compile Include="SystemSetup\AccountPayableSupplierMaintenance\APSSSPDOC.vb" />
+    <Compile Include="SystemSetup\AccountsReceivableCustomerMaintenance\ARSSCS.vb" />
+    <Compile Include="SystemSetup\AccountsReceivableCustomerMaintenance\ARSSCSDOC.vb" />
+    <Compile Include="SystemSetup\BomRoutingMaintenance\BOMSRO.vb" />
+    <Compile Include="SystemSetup\BomRoutingMaintenance\BOMSRODOC.vb" />
+    <Compile Include="SystemSetup\BomStructureMaintenance\BOMSST.vb" />
+    <Compile Include="SystemSetup\BomStructureMaintenance\BOMSSTDOC.vb" />
+    <Compile Include="SystemSetup\ComBuildSetupDefaults\COMRDF.vb" />
+    <Compile Include="SystemSetup\CustomFormSetup\COMSFM.vb" />
+    <Compile Include="SystemSetup\CustomFormSetup\COMSFMDOC.vb" />
+    <Compile Include="SystemSetup\EstimateRoutingMaintenance\QOTSRO.vb" />
+    <Compile Include="SystemSetup\EstimateRoutingMaintenance\QOTSRODOC.vb" />
+    <Compile Include="SystemSetup\EstimateStructureMaintenance\QOTSST.vb" />
+    <Compile Include="SystemSetup\EstimateStructureMaintenance\QOTSSTDOC.vb" />
+    <Compile Include="SystemSetup\InventoryApprovedManufactureMaintenance\INVSMC.vb" />
+    <Compile Include="SystemSetup\InventoryApprovedManufactureMaintenance\INVSMCDOC.vb" />
+    <Compile Include="SystemSetup\InventoryApprovedManufacturerPartNumberMaintenance\INVSMP.vb" />
+    <Compile Include="SystemSetup\InventoryApprovedManufacturerPartNumberMaintenance\INVSMPDOC.vb" />
+    <Compile Include="SystemSetup\InventoryPriceMaintenance\INVSPR.vb" />
+    <Compile Include="SystemSetup\InventoryPriceMaintenance\INVSPRDOC.vb" />
+    <Compile Include="SystemSetup\InventoryStockCodeMaintenance\INVSST.vb" />
+    <Compile Include="SystemSetup\InventoryStockCodeMaintenance\INVSSTDOC.vb" />
+    <Compile Include="SystemSetup\InventoryStockWarehouseMaintenance\INVSWS.vb" />
+    <Compile Include="SystemSetup\InventoryStockWarehouseMaintenance\INVSWSDOC.vb" />
+    <Compile Include="SystemSetup\InventorySuppliersForTheApprovedManufacturerPartNumberMaintenance\INVSMS.vb" />
+    <Compile Include="SystemSetup\InventorySuppliersForTheApprovedManufacturerPartNumberMaintenance\INVSMSDOC.vb" />
+    <Compile Include="SystemSetup\IoForecastingSalesHistorySetup\IOPSSL.vb" />
+    <Compile Include="SystemSetup\IoForecastingSalesHistorySetup\IOPSSLDOC.vb" />
+    <Compile Include="SystemSetup\MachineCodeMaintenance\BOMSMC.vb" />
+    <Compile Include="SystemSetup\MachineCodeMaintenance\BOMSMCDOC.vb" />
+    <Compile Include="SystemSetup\MaintenanceOfWorkCenters\BOMSWC.vb" />
+    <Compile Include="SystemSetup\MaintenanceOfWorkCenters\BOMSWCDOC.vb" />
+    <Compile Include="SystemSetup\MasterSubAccountMaintenance\ARSSMS.vb" />
+    <Compile Include="SystemSetup\MasterSubAccountMaintenance\ARSSMSDOC.vb" />
+    <Compile Include="SystemSetup\MultimediaSetup\COMSMMDOC.vb" />
+    <Compile Include="SystemSetup\MultimediaSetup\COMSMMOUT.vb" />
+    <Compile Include="SystemSetup\NonStockedCodeMaintenance\QOTSNS.vb" />
+    <Compile Include="SystemSetup\NonStockedCodeMaintenance\QOTSNSDOC.vb" />
+    <Compile Include="SystemSetup\NotepadSetup\COMSNODOC.vb" />
+    <Compile Include="SystemSetup\NotepadSetup\COMSSC.vb" />
+    <Compile Include="SystemSetup\PoSupplierStockCodeCrossReference\PORSSX.vb" />
+    <Compile Include="SystemSetup\PoSupplierStockCodeCrossReference\PORSSXDOC.vb" />
+    <Compile Include="SystemSetup\ProjectsAndContractsHierarchyContractSetup\PRJSHC.vb" />
+    <Compile Include="SystemSetup\ProjectsAndContractsHierarchyContractSetup\PRJSHCDOC.vb" />
+    <Compile Include="SystemSetup\ProjectsAndContractsHierarchySetup\PRJSSH.vb" />
+    <Compile Include="SystemSetup\ProjectsAndContractsHierarchySetup\PRJSSHDOC.vb" />
+    <Compile Include="SystemSetup\SerialNumberMaintenance\INVSSR.vb" />
+    <Compile Include="SystemSetup\SerialNumberMaintenance\INVSSRDOC.vb" />
+    <Compile Include="SystemSetup\SpecificNarrations\BOMSSN.vb" />
+    <Compile Include="Web References\SysproWS_Query\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SysproWS_Setup\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SysproWS_Transaction\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SysproWS_Utilities\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WipPrimaryPosting\CopyJobsIncludingMaterialAndLaborAllocations\WIPTCP.vb" />
+    <Compile Include="WipPrimaryPosting\CopyJobsIncludingMaterialAndLaborAllocations\WIPTCPDOC.vb" />
+    <Compile Include="WipPrimaryPosting\JobClosure\WIPTJC.vb" />
+    <Compile Include="WipPrimaryPosting\JobClosure\WIPTJCDOC.vb" />
+    <Compile Include="WipPrimaryPosting\JobCreationAndMaintenance\WIPTJB.vb" />
+    <Compile Include="WipPrimaryPosting\JobCreationAndMaintenance\WIPTJBDOC.vb" />
+    <Compile Include="WipPrimaryPosting\PartBillings\WIPTPB.vb" />
+    <Compile Include="WipPrimaryPosting\PartBillings\WIPTPBDOC.vb" />
+    <Compile Include="WipPrimaryPosting\TransferWorkInProgress\WIPTWT.vb" />
+    <Compile Include="WipPrimaryPosting\TransferWorkInProgress\WIPTWTDOC.vb" />
+    <Compile Include="WipPrimaryPosting\WipJobReceipts\WIPTJR.vb" />
+    <Compile Include="WipPrimaryPosting\WipJobReceipts\WIPTJRDOC.vb" />
+    <Compile Include="WipPrimaryPosting\WipLaborAllocations\WIPTJL.vb" />
+    <Compile Include="WipPrimaryPosting\WipLaborAllocations\WIPTJLDOC.vb" />
+    <Compile Include="WipPrimaryPosting\WipMaterialAllocations\WIPTJM.vb" />
+    <Compile Include="WipPrimaryPosting\WipMaterialAllocations\WIPTJMDOC.vb" />
+    <Compile Include="WipPrimaryPosting\WipSubJobLinking\WIPTSU.vb" />
+    <Compile Include="WipPrimaryPosting\WipSubJobLinking\WIPTSUDOC.vb" />
+    <Compile Include="WipPrimaryQuery\JobStatusQuery\WIPQJS.vb" />
+    <Compile Include="WipPrimaryQuery\JobStatusQuery\WIPQJSOUT.vb" />
+    <Compile Include="WipPrimaryQuery\WipProgressiveScrapToleranceQuery\WIPQLA.vb" />
+    <Compile Include="WipPrimaryQuery\WipQuery\WIPQRY.vb" />
+    <Compile Include="WipPrimaryQuery\WipQuery\WIPQRYOUT.vb" />
+    <Compile Include="WipPrimaryQuery\WipValuationQuery\WIPQJV.vb" />
+    <Compile Include="WipPrimaryQuery\WipValuationQuery\WIPQJVOUT.vb" />
+    <Compile Include="WipProjectsAndContracts\PCDepositDetailCreation\PRJTDD.vb" />
+    <Compile Include="WipProjectsAndContracts\PCDepositDetailCreation\PRJTDDDOC.vb" />
+    <Compile Include="WipProjectsAndContracts\PCDepositHeaderCreation\PRJTDH.vb" />
+    <Compile Include="WipProjectsAndContracts\PCDepositHeaderCreation\PRJTDHDOC.vb" />
+    <Compile Include="WipProjectsAndContracts\PCJobHeirarchyMaintenance\PRJTJH.vb" />
+    <Compile Include="WipProjectsAndContracts\PCJobHeirarchyMaintenance\PRJTJHDOC.vb" />
+    <Compile Include="WipProjectsAndContracts\PCRetentionDetailCreation\PRJTRD.vb" />
+    <Compile Include="WipProjectsAndContracts\PCRetentionDetailCreation\PRJTRDDOC.vb" />
+    <Compile Include="WipProjectsAndContracts\PCRetentionHeaderCreation\PRJTRH.vb" />
+    <Compile Include="WipProjectsAndContracts\PCRetentionHeaderCreation\PRJTRHDOC.vb" />
+    <Compile Include="WipProjectsAndContracts\PCScheduleCreation\PRJTSH.vb" />
+    <Compile Include="WipProjectsAndContracts\PCScheduleCreation\PRJTSHDOC.vb" />
+    <Compile Include="WipProjectsAndContracts\ProjectsAndContractsQuery\PRJQRY.vb" />
+    <Compile Include="WipProjectsAndContracts\ProjectsAndContractsQuery\PRJQRYOUT.vb" />
+    <Compile Include="WipShopFloorDataCollection\WipBuildLaborIssue\WIPRLI.vb" />
+    <Compile Include="WipShopFloorDataCollection\WipBuildMaterialIssue\WIPRMI.vb" />
+    <Compile Include="WipShopFloorDataCollection\WipLaborPosting\WIPTLP.vb" />
+    <Compile Include="WipShopFloorDataCollection\WipLaborPosting\WIPTLPDOC.vb" />
+    <Compile Include="WipShopFloorDataCollection\WipLaborPosting\WIPTLS.vb" />
+    <Compile Include="WipShopFloorDataCollection\WipLaborPosting\WIPTLSDOC.vb" />
+    <Compile Include="WipShopFloorDataCollection\WipSpecificIssues\WIPTMI.vb" />
+    <Compile Include="WipShopFloorDataCollection\WipSpecificIssues\WIPTMIDOC.vb" />
+    <Compile Include="WipTwoStageReceipting\WipInspectionAcceptIntoStock\WIPTAI.vb" />
+    <Compile Include="WipTwoStageReceipting\WipInspectionAcceptIntoStock\WIPTAIDOC.vb" />
+    <Compile Include="WipTwoStageReceipting\WipInspectionAcceptIntoStock\WIPTCE.vb" />
+    <Compile Include="WipTwoStageReceipting\WipInspectionAcceptIntoStock\WIPTCEDOC.vb" />
+    <Compile Include="WipTwoStageReceipting\WipInspectionQuantityMaintenance\WIPTII.vb" />
+    <Compile Include="WipTwoStageReceipting\WipInspectionQuantityMaintenance\WIPTIIDOC.vb" />
+    <Compile Include="WipTwoStageReceipting\WipInspectionRework\WIPTRI.vb" />
+    <Compile Include="WipTwoStageReceipting\WipInspectionRework\WIPTRIDOC.vb" />
+    <Compile Include="WipPrimaryPosting\ReserveLotSerial\WIPTRJ.vb" />
+    <Compile Include="WipPrimaryPosting\ReserveLotSerial\WIPTRJDOC.vb" />
+    <Compile Include="WipTwoStageReceipting\WipInspectionScrapMaintenance\WIPTSI.vb" />
+    <Compile Include="WipTwoStageReceipting\WipInspectionScrapMaintenance\WIPTSIDOC.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Service References\SysproWCF\SYSPROWCFService.wsdl" />
+    <None Include="Service References\SysproWCF\SYSPROWCFService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SysproWCF\SYSPROWCFService1.wsdl" />
+    <None Include="Service References\SysproWCF\SYSPROWCFService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SysproWCF\SYSPROWCFService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SysproWS_Query\Query.disco" />
+    <None Include="Web References\SysproWS_Utilities\Utilities.disco" />
+    <None Include="Web References\SysproWS_Transaction\Transaction.disco" />
+    <None Include="Web References\SysproWS_Setup\Setup.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="SysproIntegration.pfx" />
+    <None Include="Web References\SysproWS_Query\Query.wsdl" />
+    <None Include="Web References\SysproWS_Query\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\SysproWS_Setup\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\SysproWS_Setup\Setup.wsdl" />
+    <None Include="Web References\SysproWS_Transaction\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\SysproWS_Transaction\Transaction.wsdl" />
+    <None Include="Web References\SysproWS_Utilities\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\SysproWS_Utilities\Utilities.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://wcjnbsys01/sysprowebservices/Query.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\SysproWS_Query\</RelPath>
+      <UpdateFromURL>http://wcjnbsys01/sysprowebservices/Query.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Tallbridge_SysproIntegration_SysproWS_Query_queryclass</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wcjnbsys01/sysprowebservices/Setup.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\SysproWS_Setup\</RelPath>
+      <UpdateFromURL>http://wcjnbsys01/sysprowebservices/Setup.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Tallbridge_SysproIntegration_SysproWS_Setup_setupclass</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wcjnbsys01/sysprowebservices/Transaction.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\SysproWS_Transaction\</RelPath>
+      <UpdateFromURL>http://wcjnbsys01/sysprowebservices/Transaction.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Tallbridge_SysproIntegration_SysproWS_Transaction_transactionclass</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://wcjnbsys01/sysprowebservices/Utilities.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\SysproWS_Utilities\</RelPath>
+      <UpdateFromURL>http://wcjnbsys01/sysprowebservices/Utilities.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Tallbridge_SysproIntegration_SysproWS_Utilities_utilitiesclass</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Release Notes.txt" />
+    <None Include="Service References\SysproWCF\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\SysproWCF\configuration.svcinfo" />
+    <None Include="Service References\SysproWCF\configuration91.svcinfo" />
+    <None Include="Service References\SysproWCF\SYSPROWCFService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SysproWCF\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
